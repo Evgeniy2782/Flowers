@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FlowersStories</string>
+    <string name="drawer_item_home">Главная</string>
+    <string name="drawer_item_skidki">Акции и скидки</string>
+    <string name="drawer_item_zakazy">История заказов</string>
+    <string name="drawer_item_dostavka">Условия доставки</string>
+    <string name="drawer_item_o_nas">О нас</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="cart">Cart</string>
+
+</resources>

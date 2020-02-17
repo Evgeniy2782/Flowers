@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editeName"
+        android:layout_width="197dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Введите имя"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/cart_checkoutEdite"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editePhonePrefix"
+        android:layout_width="25dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="28dp"
+        android:text="+7"
+        android:textSize="@dimen/cart_checkoutEdite"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editeName" />
+        <!--app:layout_constraintTop_toBottomOf="@+id/textPhone" -->
+
+    <EditText
+        android:id="@+id/editePhone"
+        android:layout_width="93dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Ваш телефон"
+        android:inputType="phone"
+        android:text=""
+        android:textSize="@dimen/cart_checkoutEdite"
+        android:theme="@style/MyCheckBox"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/editePhonePrefix"
+        app:layout_constraintTop_toBottomOf="@+id/editeName" />
+
+    <EditText
+        android:id="@+id/editStreet"
+        android:layout_width="235dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Улица"
+        android:inputType="textMultiLine"
+        android:textSize="@dimen/cart_checkoutEdite"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editePhone" />
+
+    <EditText
+        android:id="@+id/editStreetNumber"
+        android:layout_width="71dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:hint="Дом №"
+        android:textSize="@dimen/cart_checkoutEdite"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toEndOf="@+id/editStreet"
+        app:layout_constraintTop_toBottomOf="@+id/editePhone" />
+
+    <EditText
+        android:id="@+id/editStreetFloor"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:hint="Этаж"
+        android:textSize="@dimen/cart_checkoutEdite"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editStreet" />
+
+    <EditText
+        android:id="@+id/editApartoment"
+        android:layout_width="81dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:hint="Квартира"
+        android:textSize="@dimen/cart_checkoutEdite"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toEndOf="@+id/editStreetFloor"
+        app:layout_constraintTop_toBottomOf="@+id/editStreet" />
+
+    <EditText
+        android:id="@+id/editEditePorch"
+        android:layout_width="80dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:hint="Подъезд"
+        android:textSize="@dimen/cart_checkoutEdite"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toEndOf="@+id/editApartoment"
+        app:layout_constraintTop_toBottomOf="@+id/editStreet" />
+
+
+    <TextView
+        android:id="@+id/calendarText"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Выбирите дату"
+        android:textSize="@dimen/cart_checkoutEdite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editApartoment" />
+
+    <TextView
+        android:id="@+id/textCalendarToData"
+        android:hint="Дату доставки"
+        android:layout_width="126dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text=""
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarText" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:text="Выбирите время"
+        android:textSize="@dimen/cart_checkoutEdite"
+        app:layout_constraintStart_toEndOf="@+id/calendarText"
+        app:layout_constraintTop_toBottomOf="@+id/editEditePorch" />
+
+    <TextView
+        android:id="@+id/editTextToTime"
+        android:hint="Введите время"
+        android:layout_width="126dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toEndOf="@+id/textCalendarToData"
+        app:layout_constraintTop_toBottomOf="@+id/textTime" />
+
+
+</android.support.constraint.ConstraintLayout>

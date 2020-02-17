@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fab_margin">16sp</dimen>
+    <dimen name="cart_nameItem">12sp</dimen>
+    <dimen name="cart_namePrice">12sp</dimen>
+
+    <dimen name="cart_checkoutEdite">14sp</dimen>
+    <dimen name="cart_checkoutText">16sp</dimen>
+
+</resources>
